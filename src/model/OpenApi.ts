@@ -81,7 +81,7 @@ export type PathObject = PathsObject;
 
 export function getPath(pathsObject: PathsObject, path: string): PathItemObject {
     if (SpecificationExtension.isValidExtension(path)) {
-        return undefined;
+        return undefined as any;
     }
     return pathsObject[path] as PathItemObject;
 }
